@@ -1,7 +1,7 @@
 {
-  "name": "react-package-template",
-  "version": "1.0.0",
-  "description": "React Basic Node Package Template in order to create a new components that can be consumed.",
+  "name": "react-easy-table",
+  "version": "1.0.1",
+  "description": "React Basic table, build tables in react easily. Easy way to build tables in react.",
   "main": "dist/index.js",
   "author": "Lior Amsalem",
   "scripts": {
@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lior-a/react_package_template"
+    "url": "git+https://github.com/lior-a/react_easy_table"
   },
-  "homepage": "https://github.com/lior-a/react_package_template",
+  "homepage": "https://github.com/lior-a/react_easy_table",
   "bugs": {
-    "url": "https://github.com/lior-a/react_package_template/issues"
+    "url": "https://github.com/lior-a/react_easy_table/issues"
   },
   "devDependencies": {
     "babel-cli": "^6.8.0",
@@ -48,9 +48,13 @@
   },
   "keywords": [
     "react",
-    "react template",
-    "component template",
-    "node component template",
-    "publish react component"
+    "react table",
+    "react tables",
+    "tables in react",
+    "grid",
+    "grid in react",
+    "data table",
+    "data react table",
+    "how to build react table"
   ]
 }

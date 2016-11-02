@@ -5,14 +5,14 @@ var path = require('path');
 module.exports = {
     entry: {
         index: [
-            './src/my_component_name'
+            './src/easyTable'
         ]
     },
     target: 'node',
     output: {
         path: path.join(__dirname, 'dist'),
         filename: '[name].js',
-        library: "my-component-name",
+        library: "easyTable",
         libraryTarget: "umd"
     },
     module: {
@@ -26,7 +26,7 @@ module.exports = {
         }, {
             test: /\.scss$/,
             loader: ExtractTextPlugin.extract(
-                'style-loader', // is our "before"
+                'style-loader',
                 ['raw-loader', 'sass-loader']
             )
         }]

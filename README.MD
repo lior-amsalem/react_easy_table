@@ -27,6 +27,6 @@ This is basic initial react component template, if you want to build a new react
 3. Run `npm install`.
 4. Run `npm start` (or better `npm run demon` in case you have `nodemon`, otherwise run `npm install nodemon -g`).
 5. Create a new branch.
-6. Go to `http://localhost:3334/`.
+6. Go to `http://localhost:3355/`.
 7. Write your code, commit and push to your own forked repository in the new branch.
 8. Open a PR and wait for someone to review and merge to master.

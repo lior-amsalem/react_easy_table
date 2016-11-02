@@ -17,11 +17,11 @@ app.get('*', function(req, res) {
     res.sendFile(path.join(__dirname, 'examples/index.html'));
 });
 
-app.listen(3334, 'localhost', function(error) {
+app.listen(3355, 'localhost', function(error) {
     if (error) {
         console.log(error);
         return;
     }
 
-    console.log('Go to http://localhost:3334');
+    console.log('Go to http://localhost:3355');
 });
