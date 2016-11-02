@@ -1,21 +1,64 @@
 # React Package Template
-This is basic initial react component template, if you want to build a new react component that you or others can consume (`import`/`require`) via npm registery for example - you can build the component (inside `src`) and publish it to npm.
-
+Simple and Easy to use React Table, all you need is:
+- Follow the How To Use (and install) process.
+- Build `array` of th header titles.
+- `Data` object.
+- You can assign `array` items to `data` object with `assignTo` key inside the array of the header titles.
+- and you are done!
 
 ## How To Use
-1. Install with `npm install my-component-name --save`.
-2. Import to your "js" file: `import Input from 'my-component-name';`.
-3. In your code, use like that: `<MyComponentName onChange={this.test}/>`.
+1. Install with `npm install react-easy-table --save`.
+2. Import to your "js" file: `import EasyTable from 'react-easy-table';`.
+3. In your code, use like that: `<EasyTable onChange={this.test}/>`.
 4. See `example/basic.js` as reference.
 
+## Example
+
+The Table Titles:
+```
+const tHead = [
+    {
+        title: 'Name',
+        assignTo: 'name',
+        id: 'table-title'
+    },
+    {
+        title: 'Family Name',
+        assignTo: 'family_name',
+        id: 'family_name'
+    }
+];
+```
+
+The Data Object:
+```
+const data = [
+    { name: 'Rick', family_name: 'Sanchez', id:1 },
+    { name: 'Morty', family_name: 'Smith', id:2 },
+    { name: 'Jerry', family_name: 'Smith', id:3 },
+    { name: 'Beth', family_name: 'Smith', id:4 }
+];
+```
+
+How to use the Table:
+```
+<EasyTable tHead={tHead}
+    data={data}/>
+```
+
+See more complex examples inside `examples/basic.js`.
+
 ## Features
-1. 
+1. Generate dynaic table easily. Feed it with Table Header array and Data object.
+2. Customize Call To Action & Handlers (For example, edit buttons intside the table etc...).
 
 ## Todo
-1. 
+1. Add Pagination.
+2. Add server side lazy load support.
+3. Add Customize Filters.
+4. Create basic theme.
 
 ## Bugs
-1. 
 
 ## Screenshot
 
