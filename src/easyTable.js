@@ -39,7 +39,7 @@ class MyComponentName extends React.Component {
                                 {tHead.map((title, index) => {
                                     return (
                                         <td key={title.id || this.genKey(title.title)}>
-                                            {title.assignTo === 'actions' && title.actions(data.id)}
+                                            {title.assignTo === 'actions' && title.actions(data.option)}
                                             {title.assignTo !== 'actions' && data[title.assignTo]}
                                         </td>
                                     );

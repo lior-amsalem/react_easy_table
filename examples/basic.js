@@ -9,11 +9,15 @@ function handleDelete (id) {
     alert('Delete item: ' + id);
 }
 
-const Manage = (id) => {
+const Manage = (option) => {
     return (
         <div>
-            <a href="#" onClick={() => handleEdit(id)}>Edit</a>-
-            <a href="#" onClick={() => handleDelete(id)}>Delete</a>
+            <select>
+            <option>test</option>
+            <option>test</option>
+            <option>test</option>
+            <option>test</option>
+            </select>
         </div>
     );
 };
@@ -29,6 +33,13 @@ const tHead = [
         assignTo: 'family_name',
         id: 'family_name'
     },
+
+    {
+        title: 'Manage',
+        assignTo: 'actions',
+        actions: Manage,
+        id: 'manage'
+    },
     {
         title: 'Age',
         assignTo: 'age',
@@ -38,17 +49,11 @@ const tHead = [
         title: 'Job',
         assignTo: 'job',
         id: 'job'
-    },
-    {
-        title: 'Manage',
-        assignTo: 'actions',
-        actions: Manage,
-        id: 'manage'
     }
 ];
 
 const data = [
-    { name: 'Rick', family_name: 'Sanchez', age: 9000, job: 'Scientist', id:1 },
+    { name: 'Rick', family_name: 'Sanchez', age: 9000, job: 'Scientist', id:1, option:['test','tsts','tes2'] },
     { name: 'Morty', family_name: 'Smith', age: 14, job: 'Kid', id:2 },
     { name: 'Jerry', family_name: 'Smith', age: 35, job: 'Advertising agent', id:3 },
     { name: 'Beth', family_name: 'Smith', age: 34, job: 'Horse surgeon', id:4 }
