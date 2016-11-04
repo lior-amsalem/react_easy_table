@@ -1,7 +1,4 @@
-import './easyTable.scss';
-import './theme/basic.scss';
-
-class MyComponentName extends React.Component {
+class EasyTable extends React.Component {
 
     constructor(props) {
         super(props);
@@ -54,9 +51,9 @@ class MyComponentName extends React.Component {
     }
 }
 
-MyComponentName.propTypes = {
+EasyTable.propTypes = {
     tHead: React.PropTypes.array.isRequired,
     data: React.PropTypes.array.isRequired
 };
 
-export default MyComponentName;
+export default EasyTable;

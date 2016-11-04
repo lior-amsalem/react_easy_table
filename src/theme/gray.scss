@@ -1,0 +1,36 @@
+.easy-table {
+    border: 1px solid #e8e8e8;
+    border-spacing: 0;
+
+    thead {
+        tr:first-child {
+            background-color: #696969;
+
+            th {
+                color: #fff;
+                font-weight: 400;
+            }
+        }
+    }
+
+    tr {
+        transition: background-color 0.5s;
+
+        td,
+        th {
+            padding: 15px;
+        }
+
+        &:nth-child(odd) {
+            background-color: #f1f1f1;
+        }
+
+        &:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+
+        &:hover {
+            background-color: #eaeaea;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 {
   "name": "react-easy-table",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "React Basic table, build tables in react easily. Easy way to build tables in react.",
   "main": "dist/index.js",
   "author": "Lior Amsalem",

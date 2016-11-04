@@ -1,16 +1,21 @@
-# React Package Template
+# React Easy Table
+- Tiny component - less than 1.5KB
+- Easy to use.
+- Easy to customize.
+- 6 different themes, or no theme at all - up to you.
+
 Simple and Easy to use React Table, all you need is:
 - Follow the How To Use (and install) process.
-- Build `array` of th header titles.
-- `Data` object.
-- You can assign `array` items to `data` object with `assignTo` key inside the array of the header titles.
-- and you are done!
+
 
 ## How To Use
 1. Install with `npm install react-easy-table --save`.
-2. Import to your "js" file: `import EasyTable from 'react-easy-table';`.
-3. In your code, use like that: `<EasyTable onChange={this.test}/>`.
-4. See `example/basic.js` as reference.
+2. Import to your "js" file: `import EasyTable from 'react-easy-table';` (import css theme style, optional: `import 'react-easy-table/sharp-ocean.css';`).
+3. In your code, use like that: `<EasyTable data={data} tHead={tHead}/>`.
+4. Build `array` of th header titles (`tHead`).
+5. `Data` object with all your table data.
+6. Assign `array` items (table titles) to `data` object keys with `assignTo` inside the array of the header titles.
+7. See `example/basic.js` for more info.
 
 ## Example
 
@@ -19,12 +24,12 @@ The Table Titles:
 const tHead = [
     {
         title: 'Name',
-        assignTo: 'name',
+        assignTo: 'name',   // assign table title "Name" to the data object "name"
         id: 'table-title'
     },
     {
         title: 'Family Name',
-        assignTo: 'family_name',
+        assignTo: 'family_name',    // assign table title "Family Name" to "family_name" inside our data model.
         id: 'family_name'
     }
 ];
@@ -60,9 +65,26 @@ See more complex examples inside `examples/basic.js`.
 
 ## Bugs
 
-## Screenshot
+## Screenshot && Themes
 
-![alt tag](examples/my-component-name.jpg)
+| basic        | sharp-Ocean           |
+| ------------- |:-------------:|
+| ![alt tag](screenshots/basic.jpg)      |  ![alt tag](screenshots/sharp-ocean.jpg)  |
+
+| edgy-red        | blue           |
+| ------------- |:-------------:|
+| ![alt tag](screenshots/edgy-red.jpg)      |  ![alt tag](screenshots/blue.jpg)  |
+
+| gray        | pink-head           |
+| ------------- |:-------------:|
+| ![alt tag](screenshots/gray.jpg)      |  ![alt tag](screenshots/pink-head.jpg)  |
+
+In order to use any of those themes, all you have to do is to add and import the `css` like that:
+
+```
+import EasyTable from 'easyTable'; // regular table import
+import 'easyTable/sharp-ocean.css'; // theme name - gray/edgy-red/basic... etc.
+```
 
 ## How to Contribute
 1. Fork the project (top right button, in github UI).

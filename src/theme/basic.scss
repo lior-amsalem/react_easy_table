@@ -3,8 +3,8 @@
 
     thead {
         tr:first-child {
-            background-color: #167F92;
-            
+            background-color: #1a879a;
+
             th {
                 color: #fff;
                 font-weight: 400;
@@ -20,7 +20,7 @@
         }
 
         &:nth-child(odd) {
-            background-color: #EAF3F3;
+            background-color: #e8f3f3;
         }
 
         &:nth-child(even) {

@@ -1,4 +1,5 @@
 import EasyTable from '../src/easyTable';
+import '../src/theme/basic.scss';
 
 
 function handleEdit (id) {

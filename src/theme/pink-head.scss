@@ -1,0 +1,32 @@
+.easy-table {
+    border: 2px solid #ed1c40;
+    box-shadow: 0px 2px 8px #b9b7b7;
+    border-spacing: 0;
+
+    a {
+        color: #000;
+    }
+
+    thead {
+        tr:first-child {
+
+            th {
+                background-color: #ed1c40;
+                font-weight: 400;
+            }
+        }
+    }
+
+    tr {
+        td {
+            border-bottom: 1px solid #ed1c40;
+        }
+
+        td,
+        th {
+            background-color: #fff;
+            color: #000;
+            padding: 15px;
+        }
+    }
+}
