@@ -13,7 +13,11 @@ app.use(require('webpack-dev-middleware')(compiler, {
     publicPath: config.output.publicPath
 }));
 
-app.get('*', function(req, res) {
+app.get('/examples/reset.css', function(req, res) {
+    res.sendFile(path.join(__dirname, 'examples/reset.css'));
+});
+
+app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'examples/index.html'));
 });
 
