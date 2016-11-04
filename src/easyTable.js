@@ -1,4 +1,5 @@
 import './easyTable.scss';
+import './theme/basic.scss';
 
 class MyComponentName extends React.Component {
 
@@ -22,7 +23,7 @@ class MyComponentName extends React.Component {
         } = this.props;
 
         return (
-            <table>
+            <table className="easy-table">
                 <thead>
                     <tr>
                         {tHead.map((title, index) => {
@@ -53,8 +54,9 @@ class MyComponentName extends React.Component {
     }
 }
 
-// MyComponentName.defaultProps = {
-
-// }
+MyComponentName.propTypes = {
+    tHead: React.PropTypes.array.isRequired,
+    data: React.PropTypes.array.isRequired
+};
 
 export default MyComponentName;

@@ -1,0 +1,30 @@
+.easy-table {
+    border: 1px solid #eaf3f3;
+
+    thead {
+        tr:first-child {
+            background-color: #167F92;
+            
+            th {
+                color: #fff;
+                font-weight: 400;
+            }
+        }
+    }
+
+    tr {
+
+        td,
+        th {
+            padding: 10px;
+        }
+
+        &:nth-child(odd) {
+            background-color: #EAF3F3;
+        }
+
+        &:nth-child(even) {
+            background-color: #fff;
+        }
+    }
+}
