@@ -1,0 +1,27 @@
+@import 'colors';
+
+.pagination {
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 3px;
+            border: 1px solid #d7d7d7;
+            margin-right: 3px;
+            color: #7d7d7d;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $pagination_current_page;
+            }
+
+            &.current-page {
+                cursor: default;
+                background-color: $pagination_current_page;
+            }
+        }
+    }
+}

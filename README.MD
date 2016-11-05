@@ -3,10 +3,7 @@
 - Easy to use.
 - Easy to customize.
 - 6 different themes, or no theme at all - up to you.
-
-Simple and Easy to use React Table, all you need is:
-- Follow the How To Use (and install) process.
-
+- Pagination - split table data base on `perPage` prop passed to the easy table component.
 
 ## How To Use
 1. Install with `npm install react-easy-table --save`.
@@ -54,7 +51,7 @@ How to use the Table:
 See more complex examples inside `examples/basic.js`.
 
 ## Features
-1. Generate dynaic table easily. Feed it with Table Header array and Data object.
+1. Generate dynamic table easily. Feed it with Table Header array and Data object.
 2. Customize Call To Action & Handlers (For example, edit buttons intside the table etc...).
 
 ## Todo

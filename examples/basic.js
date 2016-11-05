@@ -63,6 +63,7 @@ class MyApp extends React.Component {
                 <h1>Basic Easy Table Component</h1>
                 <h4>Table Header, Table Data, and 2 manage customize handlers (edit + delete)</h4>
                 <EasyTable tHead={tHead}
+                    currentPage={1}
                     data={data}/>
             </div>
         )
