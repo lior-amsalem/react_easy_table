@@ -1,6 +1,12 @@
 @import 'colors';
 
 .pagination {
+    tr {
+        td {
+            padding: 5px !important;
+        }
+    }
+
     ul {
         margin: 0;
         padding: 0;
@@ -16,6 +22,9 @@
 
             &:hover {
                 background-color: $pagination_current_page;
+                a {
+                    color: #7d7d7d;
+                }
             }
 
             &.current-page {
